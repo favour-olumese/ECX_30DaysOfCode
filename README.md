@@ -5,11 +5,15 @@ Engineering Career Expo, University of Lagos, 30 Days of Code and Design.
 Create a function that takes in a list as input, and returns(and prints) a new list with all repetitions reduced to one appearance alone, as output.
 E.g: f(["a", "b", "a", "a", 3, 3, 2, "hello", "b"] ) => ["a", "b", 3, 2, "hello"]. #output
 
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCode#main.py)
+
 ### Day 2
 #### Find the mode
 
 Extend the function from day 1, to also print out the modal element(s) of the input list.  i.e, to determine which element occurs the most. If there are multiple such elements, then return a list containing them all.
 E.g.: the modal element of the above list is ["a"]
+
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay2#main.py)
 
 ### Day 3
 #### Palindromic numbers
@@ -17,13 +21,19 @@ A palindrome is a word that reads the same way forwards and backwards (e.g. Tene
 Write a function that prints out all Palindromic numbers less than a given input, and returns the total number of palindromes found.
 E.g.: f(500) would print all Palindromic numbers less than 500, as well as the total number of palindromes less than 500.
 
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay3#main.py)
+
 ### Day 4
 #### Decimal to Hexadecimal.
 Without using the inbuilt hex() function, write a function that takes an integer as input, and prints out its conversion to Hexadecimal as output.
 
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay4#main.py)
+
 ### Day 5
 #### Fibonacci 
 Using recursion, write a function that prints out the first "n" members of the Fibonacci series. (The Fibonacci series is a series of integers, starting from 0 and 1, for which each term is the sum of the two preceding term; i.e  [0, 1, 1, 2, 3, 5, 8, 13, 21,...] or "fib(n+1) = fib(n)+ fib(n-1)."
+
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay5#main.py)
 
 ### Day 6
 #### Man in the well.
@@ -38,6 +48,8 @@ E.g.: f(17) => the well is 17 metres deep.
 **Day 3**: climbs 8m, height = 10 + 8= 18m.  But 18>17. STOP.(height climbed has exceeded well depth)
 
 Therefore, f(17)=3 days.
+
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay6#main.py)
 
 ### Day 7
 #### Wordle Game.
@@ -58,10 +70,14 @@ Wordle is a single-player game, in which a user is required to guess a 5-letter 
 
 * The "hidden word" is generated randomly from a list of 5-letter words hard-coded by you.
 
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay7#main.py)
+
 ### Day 8
 #### Caesar Cipher
 ##### Description
 A Caesar cipher is an ancient form of encryption. It involved taking a text(a string) as input and encoding it by replacing each letter with the one n-steps next to it in the alphabet. (E.g.; Shifting "Python" by 5, becomes "Udymts." Note that this "shift" wraps around, which is why "y" becomes "d".)
+
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay8#main.py)
 
 ##### Task: 
 * Write a function that takes in as parameters, a plaintext (string) to encode, and a shift value, and outputs the encoded value of the string.
@@ -70,11 +86,15 @@ A Caesar cipher is an ancient form of encryption. It involved taking a text(a st
 
 * Finally, write a third function that takes in a text, a shift value, and a third parameter to indicate whether to encode or decode the given text. (I.e., f("string", 5, True/false), and print out the encoded (or decoded) text accordingly.
 
+[Execute code]()
+
 ### Day 9
 #### Is Prime
 
 ##### Task:
 Write a function that takes an integer as input, and determines whether it is a prime number or not.
+
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay9#main.py)
 
 ### Day 10
 #### USSD Bank Service 
@@ -91,3 +111,5 @@ Create a mock USSD service that takes users' inputs, and provides appropriate re
 * For sending money, the user is prompted to choose from a selection of banks, after which he provides an account number, and then an amount to send. And then a password, which if correct, would send the required amount, and deduct it from  the account balance.
 
 * Follow a similar scheme as sending money, for purchasing airtime—except that in this case, the user is ported for a phone number instead.
+
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeAndDesignDay10#main.py)
