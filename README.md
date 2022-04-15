@@ -113,3 +113,16 @@ Create a mock USSD service that takes users' inputs, and provides appropriate re
 * Follow a similar scheme as sending money, for purchasing airtime—except that in this case, the user is ported for a phone number instead.
 
 [Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeAndDesignDay10#main.py)
+
+### Day 11
+#### Euclid's Algorithm (Greatest Common Divisor)
+The GCD (Greatest Common divisor) of two numbers is the largest number by which both are divisible. E.g.; gcd(42, 18) is 6, since 6 is the highest common factor (HCF—same thing as GCD) of 42 and 18.
+
+##### Task:
+Write a program that asks the user for two numbers and computes their GCD using Euclid's algorithm. The process is described below:
+* First, compute the remainder of dividing the larger number by the smaller one.
+* Next, replace the larger number with the smaller number, and the smaller number with the remainder.
+* Repeat this process until the smaller number equals zero. The GCD is the last value of the larger number.
+See full [details](https://en.m.wikipedia.org/wiki/Euclidean_algorithm#:~:text=In%20mathematics%2C%20the%20Euclidean%20algorithm,them%20both%20without%20a%20remainder)
+
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay11#main.py)
