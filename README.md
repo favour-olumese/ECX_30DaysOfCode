@@ -77,8 +77,6 @@ Wordle is a single-player game, in which a user is required to guess a 5-letter 
 ##### Description
 A Caesar cipher is an ancient form of encryption. It involved taking a text(a string) as input and encoding it by replacing each letter with the one n-steps next to it in the alphabet. (E.g.; Shifting "Python" by 5, becomes "Udymts." Note that this "shift" wraps around, which is why "y" becomes "d".)
 
-[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay8#main.py)
-
 ##### Task: 
 * Write a function that takes in as parameters, a plaintext (string) to encode, and a shift value, and outputs the encoded value of the string.
 
@@ -86,7 +84,7 @@ A Caesar cipher is an ancient form of encryption. It involved taking a text(a st
 
 * Finally, write a third function that takes in a text, a shift value, and a third parameter to indicate whether to encode or decode the given text. (I.e., f("string", 5, True/false), and print out the encoded (or decoded) text accordingly.
 
-[Execute code]()
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay8#main.py)
 
 ### Day 9
 #### Is Prime
@@ -126,3 +124,53 @@ Write a program that asks the user for two numbers and computes their GCD using 
 See full [details](https://en.m.wikipedia.org/wiki/Euclidean_algorithm#:~:text=In%20mathematics%2C%20the%20Euclidean%20algorithm,them%20both%20without%20a%20remainder)
 
 [Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay11#main.py)
+
+### Day 12
+#### Student or Professor
+
+##### Task
+At a certain school, student email addresses end with @student.college.edu, while professor email addresses end with @prof.college.edu. Write a program that first asks the user how many email addresses they will be entering, and then has the user enter those addresses. After all the email addresses are entered, the program should print out a message indicating exactly how many student and professor emails were entered.
+
+##### Using Regex
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay121#main.py)
+
+##### Using Endswith Method
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay122#main.py)
+
+### Day 13
+#### What are the Acronyms?
+
+##### Task
+Write a program that does the following:
+* Ask the user to enter (input) a sentence containing an acronym or more.
+* Print out a list containing all acronyms in the sentence.
+For example:
+* Input: "I need to get this done ASAP."; Output–> ["ASAP"]
+* Input: "SMH. The NPF is really a joke!"; Output–> ["SMH", "NPF"]
+* Input: "LOOOL. I thought you were at KFC"; Output–> ["LOOOL", "KFC"]
+(Note: An "acronym", for our purposes, is defined as any continuous sequence of UPPERCASE LETTERS, not separated by a whitespace or a symbol.)
+
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay13#main.py)
+
+### Day 14
+#### Guess the Number
+
+##### Task
+You are to ask a user to guess a number between 1 and 50.
+The user has a maximum of 5 tries.
+If the user guesses wrongly, provide an error message indicating whether their guess was above or below the actual number.
+If the user guesses correctly, congratulate them and show the number of attempts they had.
+If the user exhausts all their tries, tell them they have exhausted their tries and end the game.
+E.g.:
+```text
+> enter a number
+user: 1
+> wrong. the answer is greater than 1
+user: 25
+> wrong the answer is less than 25
+user: 14
+> wrong the number is greater than 14
+user: 15
+> Correct! You got the right answer in 3 tries.
+```
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay14#main.py)
