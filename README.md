@@ -285,9 +285,10 @@ swap their positions in the list—else, do nothing!
 * Do this until your iteration reaches the end of the list.
 * Repeat steps 1) through 3) until there are no longer any adjacent elements in the "wrong" order. Then STOP.
 (See more at: [Bubble sort](https://en.m.wikipedia.org/wiki/Bubble_sort).)
-Write a function that takes in two parameters, one list of alphabets, and one flag designating what order in which
-to sort. Using the Bubble sort algorithm, have this function return a SORTED version of the input list.
+Write a function that takes in two parameters, one list of alphabets, and one flag designating what order in which to sort. Using the Bubble sort algorithm, have this function return a SORTED version of the input list.
+
 E.g.: f(['x', 'c', 'b', 'v', 'z', 'a'], "descending") => ['a', 'b', 'c', 'v', 'x', 'z' ]
+
 **Note**: Type checking (or Exception Handling) is necessary.  Disregard case-sensitivity.
 
 ### Day 25
@@ -339,7 +340,7 @@ Write a function that:
 (E.g.: [ ("A", 2), ("A",3), ("B", 2) ... etc.])
 * Computes and returns the student GPA, based on the values provides.
 
-* Note: Handle All necessary exceptions and/or edge cases.
+**Note:** Handle All necessary exceptions and/or edge cases.
 
 ### Day 30
 #### Sudoku Solver
