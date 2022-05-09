@@ -8,11 +8,6 @@ Task: \n
 * Write a function that takes an integer as input, and returns it's translation to Roman numerals.
 * Using the aforementioned function, write a program that takes user input and prints out their Roman numeral form.
 This program must include all necessary type checks or Exception handling
-
-When in Rome.
-* Write a function that takes an integer as input, and returns it's translation to Roman numerals.
-* Using the aforementioned function, write a program that takes user input and prints out their Roman numeral form.
-This program must include all necessary type checks or Exception handling
 """
 macron = '\u0304'               # For the dash above numerals corresponding to digits above 4000
 
