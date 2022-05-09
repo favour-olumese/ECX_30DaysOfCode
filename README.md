@@ -128,7 +128,7 @@ See full [details](https://en.m.wikipedia.org/wiki/Euclidean_algorithm#:~:text=I
 ### Day 12
 #### Student or Professor
 
-##### Task
+##### Task:
 At a certain school, student email addresses end with @student.college.edu, while professor email addresses end with @prof.college.edu. Write a program that first asks the user how many email addresses they will be entering, and then has the user enter those addresses. After all the email addresses are entered, the program should print out a message indicating exactly how many student and professor emails were entered.
 
 ##### Using Regex
@@ -140,7 +140,7 @@ At a certain school, student email addresses end with @student.college.edu, whil
 ### Day 13
 #### What are the Acronyms?
 
-##### Task
+##### Task:
 Write a program that does the following:
 * Ask the user to enter (input) a sentence containing an acronym or more.
 * Print out a list containing all acronyms in the sentence.
@@ -148,19 +148,19 @@ For example:
 * Input: "I need to get this done ASAP."; Output–> ["ASAP"]
 * Input: "SMH. The NPF is really a joke!"; Output–> ["SMH", "NPF"]
 * Input: "LOOOL. I thought you were at KFC"; Output–> ["LOOOL", "KFC"]
-(Note: An "acronym", for our purposes, is defined as any continuous sequence of UPPERCASE LETTERS, not separated by a whitespace or a symbol.)
+(**Note:** An "acronym", for our purposes, is defined as any continuous sequence of UPPERCASE LETTERS, not separated by a whitespace or a symbol.)
 
 [Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay13#main.py)
 
 ### Day 14
 #### Guess the Number
 
-##### Task
-You are to ask a user to guess a number between 1 and 50.
-The user has a maximum of 5 tries.
-If the user guesses wrongly, provide an error message indicating whether their guess was above or below the actual number.
-If the user guesses correctly, congratulate them and show the number of attempts they had.
-If the user exhausts all their tries, tell them they have exhausted their tries and end the game.
+##### Task:
+* You are to ask a user to guess a number between 1 and 50.
+* The user has a maximum of 5 tries.
+* If the user guesses wrongly, provide an error message indicating whether their guess was above or below the actual number.
+* If the user guesses correctly, congratulate them and show the number of attempts they had.
+* If the user exhausts all their tries, tell them they have exhausted their tries and end the game.
 E.g.:
 ```text
 > enter a number
@@ -174,3 +174,186 @@ user: 15
 > Correct! You got the right answer in 3 tries.
 ```
 [Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay14#main.py)
+
+### Day 15
+#### Magic Square
+
+##### Task:
+A magic square is a 3 by 3 grid, such that:
+It contains ALL the numbers 1 through 9. The sum of each row, each column, and each diagonal all add up to the same number. In a program, you can simulate a magic square using a two-dimensional list.
+
+* Write a function that accepts a two-dimensional list as input, and determines whether the list is a magic square or not. Test the function in a program.
+
+### Day 16
+#### When in Rome
+
+##### Task:
+* Write a function that takes an integer as input, and returns it's translation to Roman numerals.
+* Using the aforementioned function, write a program that takes user input and prints out their Roman numeral form.
+This program must include all necessary type checks or Exception handling
+
+### Day 17
+#### Pascal triangle
+
+##### Task:
+* Write a function that prints out the first "n" rows of Pascal's triangle.
+Where "n" is an integer taken as argument of the function.
+[See more](https://en.m.wikipedia.org/wiki/Pascal%27s_triangle)
+
+### Day 18
+#### Reverse order
+
+##### Task:
+Write a function that takes a string as input, and returns a string similar to the input, but with the words in reverse order, and the punctuation marks maintaining their original order.
+E.g.:
+f("Hello. I'm Edwin A.J, and you?") => "You. and A.J Edwin I'm, Hello?"
+f("What time is it? Hammer time.") => "Time Hammer It is? time what."
+
+**Note:** As shown in the example above, the order of the punctuation marks ("?", "," , ".") have not changed. Only the words have.
+
+### Day 19
+#### Day From Date
+
+##### Task:
+Write a function that takes in a date as input, and returns what day of the week it is.
+* The input date can be in any convenient format(Whether a "ddmmyy" string, a series of integers, etc)
+* Your function must work for both future and past dates.
+* Exception handling(or Type checking) is necessary.
+
+### Day 20
+#### Countdown Timer
+
+##### Task:
+Write a program that:
+* Asks the user to enter a time period in the form of a number with a unit of either seconds, minutes, or hours.
+(E.g. "44s", "32m", "10h".)
+* The last character of the string entered would be used to determine its unit.
+* Counts down from the input value, and prints out the time left on the clock every second.
+* When the time is exhausted, makes a beeping sound non-stop until the user exits the app.
+
+### Day 21
+#### Frequency Analysis
+
+##### Task:
+* Write a function that takes a string as input and:
+Returns a dictionary whose keys are the characters found in the text,
+and whose values are the number of occurrences of that character in the text.
+E.g.: f("It is good!") => {"I": 2, "t": 1, "s": 1, "g":1, "o":2, "d":1, "!":1}
+* Write ANOTHER function that takes an input string and returns a dictionary whose keys are the words in the text, and whose values are the respective frequencies of these words.
+E.g.: f("It is not good, is it?") => {"It": 2, "is": 2, "not": 1, "good":1}
+
+Note: In both cases, disregard case sensitivity.
+
+### Day 22
+#### Zodiac
+
+##### Task:
+Extend the function from day 19 to return BOTH the day of the week AND the corresponding "Zodiac sign" of the input date. Return value can be a list or ANY convenient structure.  All rules relating to task 19 still apply.
+
+### Day 23
+#### Sieve of Eratosthenes
+
+##### Task:
+The sieve of Eratosthenes is an ancient algorithm for finding all primes less than a given value N.
+It operates as follows:
+
+1. Create a list of consecutive integers from 2 through n: (2, 3, 4, ..., n).
+
+2. Initially, let p equal 2, the smallest prime number.
+
+3. Enumerate the multiples of p by counting in increments of p from 2p to n, and mark them in the list
+(these will be 2p, 3p, 4p, ...; the p itself should not be marked).
+
+4. Find the smallest number in the list greater than p that is not marked. If there was no such number, stop.
+Otherwise, let p now equal this new number (which is the next prime), and repeat from step 3.
+
+5. When the algorithm terminates, the numbers remaining not marked in the list are all the primes below n.
+See more: [Sieve of Eratosthenes](https://en.m.wikipedia.org/wiki/Sieve_of_Eratosthenes)
+
+Using the Sieve of Eratosthenes (as described above), Write a function that takes in an integer as input, and returns a list containing all primes less than that input number.
+
+### Day 24
+#### Bubble Sort
+
+##### Task:
+"Bubble sort" is a basic algorithm for sorting (rearranging in ascending or descending order) elements in a list.
+It operates as follows:
+
+* Iterate across a list, element by element.
+* Upon encountering any two adjacent elements which are in the "wrong" designated order (ascending or descending),
+swap their positions in the list—else, do nothing!
+* Do this until your iteration reaches the end of the list.
+* Repeat steps 1) through 3) until there are no longer any adjacent elements in the "wrong" order. Then STOP.
+(See more at: [Bubble sort](https://en.m.wikipedia.org/wiki/Bubble_sort).)
+Write a function that takes in two parameters, one list of alphabets, and one flag designating what order in which
+to sort. Using the Bubble sort algorithm, have this function return a SORTED version of the input list.
+E.g.: f(['x', 'c', 'b', 'v', 'z', 'a'], "descending") => ['a', 'b', 'c', 'v', 'x', 'z' ]
+**Note**: Type checking (or Exception Handling) is necessary.  Disregard case-sensitivity.
+
+### Day 25
+#### Binary Search Algorithm
+
+##### Task:
+"Binary search" is a basic algorithm, used to find the position of a target value within a SORTED LIST.
+(More details can be found here: Binary search)
+For today's task, write a function that takes in two parameters: One list of alphabets, and one character to search.
+E.G f("x", ['m', 'v', 'x', 'u'])
+In your function:
+* first check if the input list is sorted, using any method of your preference. (If it's unsorted,
+return a warning indicating so, else continue)
+* Using the BINARY SEARCH ALGORITHM, find the position of the input character in the sorted list.
+* Return the position of the character in the search list.
+* If the character is not found, return false.
+
+### Day 26
+> We rested.
+
+### Day 27
+#### Maths Game
+
+##### Task:
+Using Python, create a game with the following rules:
+* A(randomly generated) basic algebraic expression is displayed onto the screen.( E.G 36×47, or 117 ÷ 9, etc.)
+* The user is required to provide an answer to the expression within 10 seconds.
+* If the user provides a RIGHT answer, he gains {10×(the number of seconds left)} points
+* If the user provides a WRONG answer, or the time elapsed, the player loses a life.
+* At the start of the game, the player provides his name, and begins playing with 3 lives.
+* The player loses once he has exhausted his 3 lives.
+
+Note: \n
+* Only +,-,×,÷ operations are allowed.
+* In the case of a division operation, the two numbers generated MUST be divisible.
+
+### Day 28
+#### Bulk E-mail
+
+##### Task:
+Using the built-in SMTP module, write a function that takes a list of emails as input, and sends each of them an(any) email message.
+
+### Day 29
+#### GPA Calculator
+
+##### Task:
+Write a function that:
+* Takes as parameters, a list of tuples, containing grades and their corresponding units.
+(E.g.: [ ("A", 2), ("A",3), ("B", 2) ... etc.])
+* Computes and returns the student GPA, based on the values provides.
+
+* Note: Handle All necessary exceptions and/or edge cases.
+
+### Day 30
+#### Sudoku Solver
+
+##### Task:
+* Write a function that takes in a 9×9 array of NUMBERS.
+Let this list represent a partially filled grid of numbers (specifically, of integers ranging from 1 to 9, where "0" signifies an empty space in the grid.) as parameters, and returns as a 9×9 array, the solution(s) to it.
+If there are no solutions, return False.
+
+##### Exceptions:
+* If an empty list or an invalid list (list with numbers outside the 1-9 range, or empty lists, or a list of wrong size,
+etc.) is input, it issues a warning.
+(**Hint:** Backtracking is one effective method for solving this problem—it is however, not the only method.)
+The problem is further explained below:
+
+Given a partially filled 9×9 list, the goal is to assign digits (from 1 to 9) to the empty cells so that every row,
+column, and sub grid of size 3×3 contains exactly one instance of the digits from 1 to 9.
