@@ -70,7 +70,7 @@ Wordle is a single-player game, in which a user is required to guess a 5-letter 
 
 * The "hidden word" is generated randomly from a list of 5-letter words hard-coded by you.
 
-[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay7#main.py)
+[Play game](https://replit.com/@favourolumese/Wordle-Game?v=1)
 
 ### Day 8
 #### Caesar Cipher
