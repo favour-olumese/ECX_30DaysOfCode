@@ -33,7 +33,7 @@ Without using the inbuilt hex() function, write a function that takes an integer
 #### Fibonacci 
 Using recursion, write a function that prints out the first "n" members of the Fibonacci series. (The Fibonacci series is a series of integers, starting from 0 and 1, for which each term is the sum of the two preceding term; i.e  [0, 1, 1, 2, 3, 5, 8, 13, 21,...] or "fib(n+1) = fib(n)+ fib(n-1)."
 
-[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay5#main.py)
+[Execute code](https://replit.com/@favourolumese/Fibonacci-Sequence-Using-Recursion-in-Python?v=1)
 
 ### Day 6
 #### Man in the well.
