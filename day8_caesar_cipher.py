@@ -15,11 +15,18 @@ Finally, write a third function that takes in a text, a shift value, a third par
 or decode the given text (i.e., f("string", 5, True/False)), and print out the encoded (or decoded) text accordingly
 """
 
+import sys
+
 # The word to be encoded shifts by 5 to the right, while the word to be decoded shifts by 5 to the left.
 shift = 5
 
-print('Caesar Cipher'.center(60, '*'))
-user_choice = input('Do you wish to [e]ncode, [d]ecode, or quit (any other letter)? ').lower()
+print(' Caesar Cipher '.center(40, '*'))
+choices = ['e', 'd']
+user_choice = input('Do you wish to [e]ncode, [d]ecode, or quit (any other letter)?: ').lower()
+
+if user_choice not in choices:
+    print(user_choice)
+    sys.exit()
 
 word = input('Enter the word: ')
 
@@ -94,6 +101,7 @@ def decode_words(words, shifts):
     print('Decoding:', decoded_word)
 
 
+# MAIN FUNCTION
 def encode_decode(words, shifts, choice):
     """This checks if the users wants to encode or decode, and calls the required function."""
 
@@ -104,5 +112,3 @@ def encode_decode(words, shifts, choice):
 
 
 encode_decode(word, shift, user_choice)
-
-# TODO: Fix the error of the code giving an input when you choose to quit.
