@@ -1,4 +1,4 @@
-# 30 DAYS OF CODE
+# 30 DAYS OF CODE AND DESIGN
 # Day 16
 
 """
@@ -7,7 +7,7 @@
 Task: \n
 * Write a function that takes an integer as input, and returns its translation to Roman numerals.
 * Using the aforementioned function, write a program that takes user input and prints out their Roman numeral form.
-This program must include all necessary type checks or Exception handling
+This program must include all necessary type checks or Exception handling.
 """
 
 decimal = [1000000, 900000, 500000, 400000, 100000, 90000, 50000, 40000, 10000, 9000, 5000, 4000, 1000, 900, 500, 400,
@@ -16,9 +16,9 @@ roman_sym = ['M̄', 'C̄M̄', 'D̄', 'C̄D̄', 'C̄', 'X̄C̄', 'L̄', 'X̄L̄',
              'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
 
 
-# Function to convert integer to roman numerals
+# Function to convert integer to Roman numerals
 def decimal_to_roman(user_inputs):
-    """Converts an integer to roman numerals"""
+    """Converts integers to Roman numerals"""
 
     count = 0               # To iterate the decimal and roman_sym lists
 
@@ -47,7 +47,7 @@ print(' Integers to Roman Numerals '.center(40, '*'))
 
 # Handle value errors
 try:
-    user_input = int(input('Enter a number to convert to roman numerals: '))
+    user_input = int(input('Enter a number to convert to Roman numerals: '))
     decimal_to_roman(user_input)
 except ValueError:
     print('Invalid input. Enter an integer.')
