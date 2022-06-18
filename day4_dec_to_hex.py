@@ -1,4 +1,4 @@
-# ECX 30 DAYS OF CODE
+# ECX 30 DAYS OF CODE AND DESIGN
 # Day 4
 
 """
@@ -51,5 +51,9 @@ def dec_to_hex(dec_num):
     print('Hexadecimal:', hex_num)
 
 
+# User input
+print(' Decimal to Hexadecimal '.center(40, '*'))
+user_input = int(input('Enter the decimal number you want to convert to hexadecimal: '))
+
 # Function call.
-dec_to_hex(1234)
+dec_to_hex(user_input)
