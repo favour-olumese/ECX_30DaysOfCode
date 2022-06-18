@@ -3,18 +3,18 @@
 
 """
 **Countdown Timer**
+
 Task:\n
 Write a program that:
 * Asks the user to enter a time period in the form of a number with a unit of either seconds, minutes, or hours.
-(E.G "44s", "32m", "10h".)
+(E.g.; "44s", "32m", "10h".)
 * The last character of the string entered would be used to determine its unit.
 * Counts down from the input value, and prints out the time left on the clock every second.
 * When the time is exhausted, makes a beeping sound non-stop until the user exits the app.
 """
-
-import time                    # For sleep
-import datetime                # For timedelta
-# import winsound                # For Beep
+import time             # For sleep
+import datetime         # For timedelta
+# import winsound         # For Beep on Windows OS
 
 
 # Countdown timer function
@@ -26,8 +26,7 @@ def countdown(hrs, mins, sec):
     # While loop that checks if total_seconds reaches zero
     # If not zero, decrement total time by one second
 
-    while total_seconds > 0:
-
+    while total_seconds >= 0:
         # Timer represents time left on countdown
         timer = datetime.timedelta(seconds=total_seconds)
         print(timer, end='\r')
@@ -38,10 +37,13 @@ def countdown(hrs, mins, sec):
         # Reduces total time by one second
         total_seconds = total_seconds - 1
 
-    # Timer continually beeps when the timer is up until the program is terminated
-    while True:
+    # The timer continually beeps for the next 45 seconds
+    alarm_sec = 45
+    while alarm_sec > 0:
         # winsound.Beep(440, 500)
-        print('\a')
+        print('\a', end='\r')
+        time.sleep(1)
+        alarm_sec -= 1
 
 
 # User Input
