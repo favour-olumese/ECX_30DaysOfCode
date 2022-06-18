@@ -9,6 +9,7 @@ and sends each of them an(any) email message.
 """
 
 import smtplib
+import socket           # To handle socket.gaierror
 from email.message import EmailMessage
 
 try:
@@ -18,7 +19,7 @@ try:
     msg = EmailMessage()
     msg['Subject'] = 'Test Email From Python'
     msg['From'] = sender_email
-    msg['To'] = ['favour.pytest@gmail.com', 'favour-olumese@live.unilag.edu.ng']
+    msg['To'] = ['receiver1@gmail.com', 'receiver2@yahoo.com']
     msg.set_content('''\
     Good day,
     
@@ -28,7 +29,7 @@ try:
     Test Email 
     ''')
 
-    with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+    with smtplib.SMTP('smtp.mail.yahoo.com', 587) as smtp:
         smtp.ehlo()
         smtp.starttls()
         smtp.ehlo()
@@ -37,8 +38,13 @@ try:
 
         smtp.send_message(msg)
 
+        print('Message sent.')
+
 except smtplib.SMTPAuthenticationError:
     print('Wrong password or email.')
 
 except smtplib.SMTPConnectError:
-    print('Error connecting to service')
+    print('Error connecting to service.')
+
+except socket.gaierror:
+    print('Socket.gaierror')
