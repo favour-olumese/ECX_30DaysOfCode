@@ -1,4 +1,4 @@
-# ECX 30 DAYS OF CODE
+# ECX 30 DAYS OF CODE AND DESIGN
 # Day 9
 
 """
@@ -41,10 +41,13 @@ def prime_number(int_input):
         print(str(int_input) + ' is a prime number.')
 
 
-# User input
-print(' PRIME NUMBER CHECK '.center(30, '*'))
-print('Check if a number is a prime or composite number.')
-user_input = int(input('Enter number: '))
+# User's input
+try:
+    print(' Prime Number Checker '.center(30, '*'))
+    print('Check if a number is a prime or composite number.')
+    user_input = int(input('Enter number: '))
 
-# Function call
-prime_number(user_input)
+    # Function call
+    prime_number(user_input)
+except ValueError:
+    print('Invalid input! Input only integers')
