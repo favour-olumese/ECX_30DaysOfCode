@@ -12,9 +12,7 @@ The process is described below:
 * First, compute the remainder of dividing the larger number by the smaller one.
 * Next, replace the larger number with the smaller number, and the smaller number with the remainder.
 * Repeat this process until the smaller number equals zero. The GCD is the last value of the larger number.
-(See full details:
-https://en.m.wikipedia.org/wiki/Euclidean_algorithm
-#:~:text=In%20mathematics%2C%20the%20Euclidean%20algorithm,them%20both%20without%20a%20remainder.
+(See full details: https://en.m.wikipedia.org/wiki/Euclidean_algorithm.)
 """
 
 
@@ -37,10 +35,13 @@ def euclidean(big_num, small_num):
 
 
 # Ask users for input
-print(' Greatest Common Divisor Finder '.center(40, '*'))
-print('Enter two positive integer')
-first_num = int(input('First number: '))
-second_num = int(input('Second number: '))
+try:
+    print(' Greatest Common Divisor Finder '.center(40, '*'))
+    print('Enter two positive integer')
+    first_num = int(input('First number: '))
+    second_num = int(input('Second number: '))
 
-# Function call
-euclidean(first_num, second_num)
+    # Function call
+    euclidean(first_num, second_num)
+except ValueError:
+    print('Invalid input! Input only integers.')
