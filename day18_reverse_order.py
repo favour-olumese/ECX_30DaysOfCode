@@ -1,7 +1,6 @@
 # ECX 30 DAYS OF CODE AND DESIGN
 # Day 18
 
-
 """
 **Reverse order.**
 
@@ -12,7 +11,8 @@ E.g.:
 f("Hello. I'm Edwin A.J, and you?") => "You. and A.J Edwin I'm, Hello?"
 f("What time is it? Hammer time.") => "Time Hammer It is? time what."
 
-Note: As shown in the example above, the order of the punctuation marks ("?", "," , ".") have not changed. Only the words have.
+Note: As shown in the example above, the order of the punctuation marks ("?", "," , ".") have not changed.
+Only the words have.
 """
 
 import re                   # For findall(), compile()
@@ -21,7 +21,7 @@ import string               # For punctuation()
 
 def change_word_order(words):
     """Reverse word order with punctuations intact."""
-    # Regex containing both word and punctuations
+    # Regex containing both words and punctuations
     find_word_punct = re.compile(r'\w+(?:(?:\.|\')\w+)?|["!#$()\[\]%&\'./:?;,<=>]')
     
     # Regex containing only words
@@ -54,7 +54,7 @@ def change_word_order(words):
     print(word_output)
 
 
-print('Print the reverse order of words with punctuation mark left in the same order.')
+print('Print the reverse order of words with punctuation mark(s) left in the same order.')
 user_input = input('Enter the word you want its order changed: ')
 
 # Function call
