@@ -27,6 +27,8 @@ def calculate_gpa(courses_grades):
     global total_grade_point
 
     for grading in courses_grades:
+        # courses_grade is a list of tuples with each having two values,
+        # the first would be the grade, and the second would be the unit.
         cumulative_unit += grading[1]
 
         total_grade_point += (grades_strength[grading[0]] * grading[1])
@@ -37,7 +39,7 @@ def calculate_gpa(courses_grades):
 
 
 try:
-    course_no = int(input('How many gradable course did you offer: '))
+    course_no = int(input('How many gradable courses did you offer: '))
 
     i = 0
     while i < course_no:
