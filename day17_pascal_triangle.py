@@ -2,7 +2,7 @@
 # Day 17
 
 """
-**Pascal triangle**
+**Pascal's triangle**
 
 Task: \n
 * Write a function that prints out the first "n" rows of Pascal's triangle.
@@ -13,7 +13,7 @@ import math                 # For comb() [Combination] function
 
 
 def pascal_triangle(numbers):
-    """Prints Pascal Triangle Using Combination"""
+    """Prints Pascal's Triangle Using Combination"""
 
     for num_of_elements in range(numbers + 1):
         for selected_elements in range(num_of_elements + 1):
@@ -22,9 +22,9 @@ def pascal_triangle(numbers):
         print('\n')
 
 
-print(' Pascal Triangle '.center(40, '*'))
+print(' Pascal\'s Triangle '.center(40, '*'))
 try:
-    number = int(input('Enter the range of Pascal triangle to print: '))
+    number = int(input('Enter the range of Pascal\'s triangle to print: '))
     pascal_triangle(number)
 except ValueError:
     print('Invalid input. Enter an integer.')
