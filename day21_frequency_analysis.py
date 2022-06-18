@@ -3,19 +3,20 @@
 
 """
 **Frequency Analysis**
+
 Task:\n
 * Write a function that takes a string as input and:
 Returns a dictionary whose keys are the characters found in the text,
 and whose values are the number of occurrences of that character in the text.
-E.G: f("It is good!") => {"I": 2, "t": 1, "s": 1, "g":1, "o":2, "d":1, "!":1}
-* Write ANOTHER function that takes an input string and returns a dictionary whose keys are the words in the text,
+E.g.: f("It is good!") => {"I": 2, "t": 1, "s": 1, "g":1, "o":2, "d":1, "!":1}
+* Write another function that takes an input string and returns a dictionary whose keys are the words in the text,
 and whose values are the respective frequencies of these words.
-E.G: f("It is not good, is it?") => {"It": 2, "is": 2, "not": 1, "good":1}
+E.g.: f("It is not good, is it?") => {"It": 2, "is": 2, "not": 1, "good":1}
 
 Note: In both cases, disregard case sensitivity.
 """
 
-import re           # For findall to create a list of letters inputted
+import re           # For findall() to create a list of letters inputted
 
 # Dictionaries to stores the values of occurring letters and words
 letter_dict = {}
@@ -38,7 +39,7 @@ def letter_freq(word):
 # Function to count occurring words
 def word_freq(word):
     """Counts the occurrences of words in a string"""
-    word_list = re.findall(r'\w+', word)
+    word_list = re.findall(r'\w+(?:\'\w+)?', word)
 
     for word in word_list:
         if word in word_dict:
@@ -49,7 +50,7 @@ def word_freq(word):
     print(word_dict)
 
 
-print(' Words and letter Counters '.center(40, '*'))
+print(' Words and Letters Counters '.center(40, '*'))
 user_input = input('Enter word(s): ').lower()
 
 # Function calls
