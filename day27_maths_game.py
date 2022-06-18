@@ -5,7 +5,7 @@
 **Maths Game**
 
 Using Python, create a game with the following rules:
-* A(randomly generated) basic algebraic expression is displayed onto the screen.( E.G 36×47, or 117 ÷ 9, etc.)
+* A (randomly generated) basic algebraic expression is displayed onto the screen.( E.G 36×47, or 117 ÷ 9, etc.)
 * The user is required to provide an answer to the expression within 10 seconds.
 * If the user provides a RIGHT answer, he gains {10×(the number of seconds left)} points
 * If the user provides a WRONG answer, or the time elapsed, the player loses a life.
