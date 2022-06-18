@@ -4,12 +4,12 @@
 """
 **Binary Search Algorithm**
 
-"Binary search" is a basic algorithm, used to find the position of a target value within a SORTED LIST.
-(More details can be found here: Binary search)
-For today's task, write a function that takes in two parameters: One list of alphabets, and one character to search.
-E.G f("x", ['m', 'v', 'x', 'u'])
+"Binary search" is a basic algorithm, used to find the position of a target value within a sorted list.
+
+Write a function that takes in two parameters: One list of alphabets, and one character to search.
+E.g.; f("x", ['m', 'v', 'x', 'u'])
 In your function:
-* first check if the input list is sorted, using any method of your preference. (If it's unsorted,
+* First check if the input list is sorted, using any method of your preference. (If it's unsorted,
 return a warning indicating so, else continue)
 * Using the BINARY SEARCH ALGORITHM, find the position of the input character in the sorted list.
 * Return the position of the character in the search list.
@@ -18,6 +18,7 @@ return a warning indicating so, else continue)
 
 
 def binary_search(list_item, search_item):
+    """Finds the index of a letter from a list using binary search algorithm."""
     list_item_sorted = list_item[:]
     list_item_sorted.sort()
 
@@ -36,7 +37,7 @@ def binary_search(list_item, search_item):
                 right_index = middle_index - 1
 
             else:
-                return print(middle_index)
+                return print(search_item + ' index: ' + str(middle_index))
 
         print(search_item, 'is not in the list.')
 
