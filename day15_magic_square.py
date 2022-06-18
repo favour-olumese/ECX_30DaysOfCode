@@ -1,4 +1,4 @@
-# 30 DAYS OF CODE
+# 30 DAYS OF CODE AND DESIGN
 # Day 15
 
 """
@@ -39,12 +39,12 @@ def magic_square_board(boards):
 
 # Function to fill the board and check if the numbers form a magic square
 def magic_square(boards_items, boards):
-    """This checks for if a magic number is formed from a list containing integers"""
+    """This checks if a magic square is formed from a list of integers."""
 
     counts = 1                      # Used to enter board items
     total_row_sum = []              # Used to sum the rows of the board
 
-    # Entering list items into the board and calculating sum of rows
+    # Entering list items into the board and calculating the sum of rows
     for nested_lists in boards_items:
         total = 0
         for list_items in nested_lists:
@@ -70,13 +70,13 @@ def magic_square(boards_items, boards):
     back_slash_diagonal = int(boards[1]) + int(boards[5]) + int(boards[9])
     forward_slash_diagonal = int(boards[3]) + int(boards[5]) + int(boards[7])
 
-    # Check if sum of individual rows have the same value
+    # Check if the sum of individual rows has the same value
     if total_row_sum[0] == total_row_sum[1] == total_row_sum[2]:
         all_row = total_row_sum[1]
     else:
         all_row = -1
 
-    # Check if sum of individual columns have the same value
+    # Check if the sum of individual columns has the same value
     if first_col == second_col == third_col:
         all_col = first_col
     else:
@@ -90,7 +90,7 @@ def magic_square(boards_items, boards):
 
     # Final check if summation of individual rows, columns, and diagonal have the same value
     if all_row == all_col == all_diagonals:
-        print('The numbers forms a magic square\n')
+        print('The numbers form a magic square\n')
     else:
         print('The numbers do not form a magic square\n')
 
