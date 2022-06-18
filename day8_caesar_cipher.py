@@ -1,4 +1,4 @@
-# ECX 30 DAYS OF CODE
+# ECX 30 DAYS OF CODE AND DESIGN
 # Day 8
 
 """
@@ -12,9 +12,9 @@ Write a function that takes a plaintext (string) to encode, and a shift value an
 Write another function that takes in the encoded string, with a shift value and decodes it.
 
 Finally, write a third function that takes in a text, a shift value, a third parameter to indicate whether to encode
-or decode the given text (i.e., f("string", 5, True/False)), and print out the encoded (or decoded) text accordingly
+or decode the given text (i.e., f("string", 5, True/False)), and print out the encoded (or decoded) text accordingly.
 """
-
+import string
 import sys
 
 # The word to be encoded shifts by 5 to the right, while the word to be decoded shifts by 5 to the left.
@@ -25,7 +25,7 @@ choices = ['e', 'd']
 user_choice = input('Do you wish to [e]ncode, [d]ecode, or quit (any other letter)?: ').lower()
 
 if user_choice not in choices:
-    print(user_choice)
+    print('Program closed.')
     sys.exit()
 
 word = input('Enter the word: ')
@@ -33,7 +33,7 @@ word = input('Enter the word: ')
 
 # ENCODING FUNCTION
 def encode_words(words, shifts):
-    """This encodes a word using caesar cipher."""
+    """This encodes a word using Caesar cipher."""
 
     # Variable for storing the encoded word.
     encoded_word = ''
@@ -42,6 +42,10 @@ def encode_words(words, shifts):
 
         # Check for space and tab
         if ord(i) == 32 or ord(i) == 9:
+            shifted_word = ord(i)
+
+        # Check for punctuations
+        elif i in string.punctuation:
             shifted_word = ord(i)
 
         # Check if the character is lowercase or uppercase
@@ -64,12 +68,12 @@ def encode_words(words, shifts):
         encoded_word = encoded_word + chr(shifted_word)
 
     print('Word:', word)
-    print('Encoding:', encoded_word)
+    print('Encoded word:', encoded_word)
 
 
 # DECODING FUNCTION
 def decode_words(words, shifts):
-    """This decodes a word using caesar cipher"""
+    """This decodes a word using Caesar cipher"""
 
     # Variable for storing the decoded word.
     decoded_word = ''
@@ -78,6 +82,10 @@ def decode_words(words, shifts):
 
         # Check for space and tab
         if ord(i) == 32 or ord(i) == 9:
+            shifted_word = ord(i)
+
+        # Check for punctuations
+        elif i in string.punctuation:
             shifted_word = ord(i)
 
         # Check if the character is lowercase or uppercase
@@ -98,12 +106,11 @@ def decode_words(words, shifts):
         decoded_word = decoded_word + chr(shifted_word)
 
     print('Word:', word)
-    print('Decoding:', decoded_word)
+    print('Decoded word:', decoded_word)
 
 
-# MAIN FUNCTION
 def encode_decode(words, shifts, choice):
-    """This checks if the users wants to encode or decode, and calls the required function."""
+    """This checks if the users want to encode or decode, and calls the required function."""
 
     if choice == 'e':
         encode_words(words, shifts)
