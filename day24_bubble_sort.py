@@ -2,7 +2,7 @@
 # Day 24
 
 """
-*Bubble Sort**
+**Bubble Sort**
 
 "Bubble sort" is a basic algorithm for sorting (rearranging in ascending or descending order) elements in a list.
 It operates as follows:
@@ -11,13 +11,14 @@ It operates as follows:
 * Upon encountering any two adjacent elements which are in the "wrong" designated order (ascending or descending),
 swap their positions in the list—else, do nothing!
 * Do this until your iteration reaches the end of the list.
-* Repeat steps 1) through 3) until there are no longer any adjacent elements in the "wrong" order. Then STOP.
-(See more at : [Bubble sort](https://en.m.wikipedia.org/wiki/Bubble_sort).)
+* Repeat steps 1) through 3) until there are no longer any adjacent elements in the "wrong" order. Then stop.
+(See more at: [Bubble sort](https://en.m.wikipedia.org/wiki/Bubble_sort).)
 Write a function that takes in two parameters, one list of alphabets, and one flag designating what order in which
 to sort. Using the Bubble sort algorithm, have this function return a SORTED version of the input list.
-E.G : f(['x', 'c', 'b', 'v', 'z', 'a'], "descending") => ['a', 'b', 'c', 'v', 'x', 'z' ]
-Note: Type checking (or Exception Handling) is necessary.  Disregard case-sensitivity.
+E.g.: f(['x', 'c', 'b', 'v', 'z', 'a'], "descending") => ['a', 'b', 'c', 'v', 'x', 'z' ]
+Note: Type checking (or Exception Handling) is necessary. Disregard case-sensitivity.
 """
+
 
 def bubble_sort(list_items, order):
     """Sorts a list using Bubble sort"""
