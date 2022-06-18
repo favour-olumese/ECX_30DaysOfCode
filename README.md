@@ -5,7 +5,8 @@ Engineering Career Expo, University of Lagos, 30 Days of Code and Design.
 Create a function that takes in a list as input, and returns(and prints) a new list with all repetitions reduced to one appearance alone, as output.
 E.g: f(["a", "b", "a", "a", 3, 3, 2, "hello", "b"] ) => ["a", "b", 3, 2, "hello"]. #output
 
-[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCode#main.py)
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay1#main.py)
+[Read article](https://thecodingprocess.hashnode.dev/creating-a-new-list-with-multiple-occurrences-removed-using-the-set-function-in-python)
 
 ### Day 2
 #### Find the mode
@@ -13,7 +14,8 @@ E.g: f(["a", "b", "a", "a", 3, 3, 2, "hello", "b"] ) => ["a", "b", 3, 2, "hello"
 Extend the function from day 1, to also print out the modal element(s) of the input list.  i.e, to determine which element occurs the most. If there are multiple such elements, then return a list containing them all.
 E.g.: the modal element of the above list is ["a"]
 
-[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay2#main.py)
+[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay2)
+[Read article](https://thecodingprocess.hashnode.dev/finding-the-mode-of-list-items-using-the-multimode-function-in-python)
 
 ### Day 3
 #### Palindromic numbers
@@ -22,18 +24,21 @@ Write a function that prints out all Palindromic numbers less than a given input
 E.g.: f(500) would print all Palindromic numbers less than 500, as well as the total number of palindromes less than 500.
 
 [Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay3#main.py)
+[Read article](https://thecodingprocess.hashnode.dev/finding-palindromes-using-python)
 
 ### Day 4
 #### Decimal to Hexadecimal.
 Without using the inbuilt hex() function, write a function that takes an integer as input, and prints out its conversion to Hexadecimal as output.
 
 [Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay4#main.py)
+[Read article](https://thecodingprocess.hashnode.dev/converting-decimal-to-hexadecimal-without-the-hex-function-in-python)
 
 ### Day 5
 #### Fibonacci 
 Using recursion, write a function that prints out the first "n" members of the Fibonacci series. (The Fibonacci series is a series of integers, starting from 0 and 1, for which each term is the sum of the two preceding term; i.e  [0, 1, 1, 2, 3, 5, 8, 13, 21,...] or "fib(n+1) = fib(n)+ fib(n-1)."
 
 [Execute code](https://replit.com/@favourolumese/Fibonacci-Sequence-Using-Recursion-in-Python?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/fibonacci-sequence-using-recursion-in-python)
 
 ### Day 6
 #### Man in the well.
@@ -50,6 +55,7 @@ E.g.: f(17) => the well is 17 metres deep.
 Therefore, f(17)=3 days.
 
 [Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay6#main.py)
+[Read article](https://thecodingprocess.hashnode.dev/solving-word-problem-using-python)
 
 ### Day 7
 #### Wordle Game.
@@ -71,6 +77,7 @@ Wordle is a single-player game, in which a user is required to guess a 5-letter 
 * The "hidden word" is generated randomly from a list of 5-letter words hard-coded by you.
 
 [Play game](https://replit.com/@favourolumese/Wordle-Game?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/creating-a-wordle-game-using-python)
 
 ### Day 8
 #### Caesar Cipher
@@ -84,7 +91,8 @@ A Caesar cipher is an ancient form of encryption. It involved taking a text(a st
 
 * Finally, write a third function that takes in a text, a shift value, and a third parameter to indicate whether to encode or decode the given text. (I.e., f("string", 5, True/false), and print out the encoded (or decoded) text accordingly.
 
-[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay8#main.py)
+[Execute code](https://replit.com/@favourolumese/Caesar-Cipher?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/creating-caesar-cipher-using-python)
 
 ### Day 9
 #### Is Prime
@@ -92,7 +100,8 @@ A Caesar cipher is an ancient form of encryption. It involved taking a text(a st
 ##### Task:
 Write a function that takes an integer as input, and determines whether it is a prime number or not.
 
-[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay9#main.py)
+[Execute code](https://replit.com/@favourolumese/Prime-Number-Checker-Using-Python?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/prime-number-checker-using-python)
 
 ### Day 10
 #### USSD Bank Service 
@@ -110,7 +119,8 @@ Create a mock USSD service that takes users' inputs, and provides appropriate re
 
 * Follow a similar scheme as sending money, for purchasing airtime—except that in this case, the user is ported for a phone number instead.
 
-[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeAndDesignDay10#main.py)
+[Execute code](https://replit.com/@favourolumese/Mock-Bank-USSD-Service?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/creating-a-mock-ussd-service-using-python)
 
 ### Day 11
 #### Euclid's Algorithm (Greatest Common Divisor)
@@ -121,9 +131,10 @@ Write a program that asks the user for two numbers and computes their GCD using 
 * First, compute the remainder of dividing the larger number by the smaller one.
 * Next, replace the larger number with the smaller number, and the smaller number with the remainder.
 * Repeat this process until the smaller number equals zero. The GCD is the last value of the larger number.
-See full [details](https://en.m.wikipedia.org/wiki/Euclidean_algorithm#:~:text=In%20mathematics%2C%20the%20Euclidean%20algorithm,them%20both%20without%20a%20remainder)
+See full [details](https://en.m.wikipedia.org/wiki/Euclidean_algorithm)
 
-[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay11#main.py)
+[Execute code](https://replit.com/@favourolumese/HCF-Finder?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/creating-an-hcf-finder-using-python)
 
 ### Day 12
 #### Student or Professor
@@ -131,11 +142,13 @@ See full [details](https://en.m.wikipedia.org/wiki/Euclidean_algorithm#:~:text=I
 ##### Task:
 At a certain school, student email addresses end with @student.college.edu, while professor email addresses end with @prof.college.edu. Write a program that first asks the user how many email addresses they will be entering, and then has the user enter those addresses. After all the email addresses are entered, the program should print out a message indicating exactly how many student and professor emails were entered.
 
+[Read article](https://thecodingprocess.hashnode.dev/finding-the-number-of-time-a-pattern-is-inputted-using-python)
+
 ##### Using Regex
-[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay121#main.py)
+[Execute code](https://replit.com/@favourolumese/Email-Addresses-Pattern-Counter-Using-Regex?v=1)
 
 ##### Using Endswith Method
-[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay122#main.py)
+[Execute code](https://replit.com/@favourolumese/Email-Addresses-Pattern-Counter-Using-Endswith-Method?v=1)
 
 ### Day 13
 #### What are the Acronyms?
@@ -150,7 +163,8 @@ For example:
 * Input: "LOOOL. I thought you were at KFC"; Output–> ["LOOOL", "KFC"]
 (**Note:** An "acronym", for our purposes, is defined as any continuous sequence of UPPERCASE LETTERS, not separated by a whitespace or a symbol.)
 
-[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay13#main.py)
+[Execute code](https://replit.com/@favourolumese/Simple-Acronyms-Finder-Using-Regular-Expressions?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/simple-acronyms-finder-using-regular-expressions)
 
 ### Day 14
 #### Guess the Number
@@ -173,7 +187,8 @@ user: 14
 user: 15
 > Correct! You got the right answer in 3 tries.
 ```
-[Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay14#main.py)
+[Execute code](https://replit.com/@favourolumese/Number-Guessing-Game?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/creating-a-number-guessing-game-using-python)
 
 ### Day 15
 #### Magic Square
@@ -184,6 +199,9 @@ It contains ALL the numbers 1 through 9. The sum of each row, each column, and e
 
 * Write a function that accepts a two-dimensional list as input, and determines whether the list is a magic square or not. Test the function in a program.
 
+[Execute code](https://replit.com/@favourolumese/Magic-Square?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/creating-a-magic-square-using-python)
+
 ### Day 16
 #### When in Rome
 
@@ -192,6 +210,9 @@ It contains ALL the numbers 1 through 9. The sum of each row, each column, and e
 * Using the aforementioned function, write a program that takes user input and prints out their Roman numeral form.
 This program must include all necessary type checks or Exception handling
 
+[Execute code](https://replit.com/@favourolumese/Integers-to-Roman-Numerals?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/converting-integers-to-roman-numerals-using-python)
+
 ### Day 17
 #### Pascal triangle
 
@@ -199,6 +220,9 @@ This program must include all necessary type checks or Exception handling
 * Write a function that prints out the first "n" rows of Pascal's triangle.
 Where "n" is an integer taken as argument of the function.
 [See more](https://en.m.wikipedia.org/wiki/Pascal%27s_triangle)
+
+[Execute code](https://replit.com/@favourolumese/Pascals-Triangle?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/pascals-triangle-using-python)
 
 ### Day 18
 #### Reverse order
@@ -211,6 +235,9 @@ f("What time is it? Hammer time.") => "Time Hammer It is? time what."
 
 **Note:** As shown in the example above, the order of the punctuation marks ("?", "," , ".") have not changed. Only the words have.
 
+[Execute code](https://replit.com/@favourolumese/Reversing-Words-Order-with-Punctuations-Order-Unchanged?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/reversing-words-order-with-punctuations-order-unchanged)
+
 ### Day 19
 #### Day From Date
 
@@ -219,6 +246,9 @@ Write a function that takes in a date as input, and returns what day of the week
 * The input date can be in any convenient format(Whether a "ddmmyy" string, a series of integers, etc)
 * Your function must work for both future and past dates.
 * Exception handling(or Type checking) is necessary.
+
+[Execute code](https://replit.com/@favourolumese/Day-Name-from-a-Given-Date?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/getting-the-day-of-a-date-using-python)
 
 ### Day 20
 #### Countdown Timer
@@ -230,6 +260,9 @@ Write a program that:
 * The last character of the string entered would be used to determine its unit.
 * Counts down from the input value, and prints out the time left on the clock every second.
 * When the time is exhausted, makes a beeping sound non-stop until the user exits the app.
+
+[Execute code](https://replit.com/@favourolumese/Countdown-Timer?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/creating-a-countdown-timer-using-python)
 
 ### Day 21
 #### Frequency Analysis
@@ -243,6 +276,9 @@ E.g.: f("It is good!") => {"I": 2, "t": 1, "s": 1, "g":1, "o":2, "d":1, "!":1}
 E.g.: f("It is not good, is it?") => {"It": 2, "is": 2, "not": 1, "good":1}
 
 Note: In both cases, disregard case sensitivity.
+
+[Execute code](https://replit.com/@favourolumese/Counting-the-Occurrences-of-Letters-and-Words-in-a-Sentence?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/counting-the-occurrences-of-letters-and-words-in-a-sentence-using-python)
 
 ### Day 22
 #### Zodiac
@@ -272,6 +308,9 @@ See more: [Sieve of Eratosthenes](https://en.m.wikipedia.org/wiki/Sieve_of_Erato
 
 Using the Sieve of Eratosthenes (as described above), Write a function that takes in an integer as input, and returns a list containing all primes less than that input number.
 
+[Execute code](https://replit.com/@favourolumese/Sieve-of-Eratosthenes?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/finding-prime-numbers-using-sieve-of-eratosthenes-in-python)
+
 ### Day 24
 #### Bubble Sort
 
@@ -291,6 +330,9 @@ E.g.: f(['x', 'c', 'b', 'v', 'z', 'a'], "descending") => ['a', 'b', 'c', 'v', 'x
 
 **Note**: Type checking (or Exception Handling) is necessary.  Disregard case-sensitivity.
 
+[Execute code](https://replit.com/@favourolumese/Bubble-Sort?v=1)
+[Read aricle](https://thecodingprocess.hashnode.dev/bubble-sort-in-python)
+
 ### Day 25
 #### Binary Search Algorithm
 
@@ -305,6 +347,9 @@ return a warning indicating so, else continue)
 * Using the BINARY SEARCH ALGORITHM, find the position of the input character in the sorted list.
 * Return the position of the character in the search list.
 * If the character is not found, return false.
+
+[Execute code](https://replit.com/@favourolumese/Binary-Search-Algorithm?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/binary-search-algorithm-in-python)
 
 ### Day 26
 > We rested.
@@ -325,6 +370,10 @@ Note: \n
 * Only +,-,×,÷ operations are allowed.
 * In the case of a division operation, the two numbers generated MUST be divisible.
 
+[Excute code](https://replit.com/@favourolumese/Maths-Game?v=1)
+[Execute Timed Mental Maths Game (Similar but advanced to Maths Game)](https://replit.com/@favourolumese/Timed-Mental-Maths-Game?v=1)
+[Read Timed Mental Maths Game]((https://thecodingprocess.hashnode.dev/timed-mental-maths-game)
+
 ### Day 28
 #### Bulk E-mail
 
@@ -342,6 +391,9 @@ Write a function that:
 
 **Note:** Handle All necessary exceptions and/or edge cases.
 
+[Execute code](https://replit.com/@favourolumese/GPA-Calculator?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/creating-a-gpa-calculator-using-python)
+
 ### Day 30
 #### Sudoku Solver
 
@@ -358,3 +410,7 @@ The problem is further explained below:
 
 Given a partially filled 9×9 list, the goal is to assign digits (from 1 to 9) to the empty cells so that every row,
 column, and sub grid of size 3×3 contains exactly one instance of the digits from 1 to 9.
+
+[Execute code](https://replit.com/@favourolumese/Sudoku-Solver?v=1)
+[Read article](https://thecodingprocess.hashnode.dev/creating-a-sudoku-solver-using-python)
+
