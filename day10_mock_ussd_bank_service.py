@@ -5,23 +5,30 @@
 **USSD Bank Service**
 
 Task: \n
-- User provides a USSD code as input
-- User can then choose among a list of options (with number), whether to balance, send money, purchase airtime, etc.
-- For check balance, the user is prompted to provide his password (hard-coded by you).
-If correct, he is shown the balance (also hard coded)
-- For sending money, the user is prompted to choose from a selection of banks,
-after which he provides an account number, and then an amount to send; and then a password,
-which if correct, would send the required amount, and deduct from account balance.
-- Follow a similar scheme as sending money, for purchasing airtime—except that in this case,
-the user is ported for a phone number instead.
 
+Create a mock USSD service that takes users' input and provides appropriate responses.
+* Users provide a USSD code as input
+
+* Users can then choose among a list of options (with numbers), whether to check their balance,
+send money, purchase airtime, etc.
+
+* To check their balance, users are prompted to provide their password (hard-coded by you).
+If correct, they are shown the balance—also hard-coded.
+
+* For sending money, users are prompted to choose from a selection of banks,
+after which they are to provide an account number, and then an amount to send. And then a password,
+which if correct, would send the required amount and deduct it from their account balance.
+
+* Follow a similar scheme as sending money, for purchasing airtime—except that in this case,
+users are prompted for a phone number instead.
 """
-import time
+
+import time                         # To create a time counter to mimic transaction loading
 
 # Customer registered details
 saved_password = 1234
 saved_balance = 9081726354
-customer_phone = '08098981122'
+customer_phone = '08091234567'
 
 # Global variables
 list_of_banks = ['Gtbank', 'UBA', 'First Bank', 'Wema Bank', 'Heritage', 'Ecobank', 'Zenith Bank']
@@ -169,16 +176,18 @@ while ussd_service is True:
                     print('You have been barred. Visit the nearest branch to unblock your account.')
                     break
 
-        # CANCEL USSD Service
+        # CANCEL USSD SERVICE
         elif customer_choice == 4:
             break
 
+        # WRONG CHOICE INPUT
         else:
             print('Wrong input!\n')
             continue
 
+        # PERFORM ANOTHER TRANSACTION
         # Ask if another transaction is to be carried out
-        print('\nDo you to to carry out another transaction;\n'
+        print('\nDo you want to carry out another transaction?\n'
               '1. Yes\n'
               '2. No')
 
@@ -187,7 +196,11 @@ while ussd_service is True:
         if another_transaction == 1:
             ussd_service = True
         else:
+            print('Goodbye')
             ussd_service = False
 
     except ValueError:
         print('Invalid entry\n')
+
+# TODO: Possible additions: a dictionary for each bank containing dummy account details can be created.
+# When the customer types the account detail, the name on the account gets displayed.
