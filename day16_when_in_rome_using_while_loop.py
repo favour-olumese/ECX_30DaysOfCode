@@ -1,4 +1,4 @@
-# ECX 30 DAYS OF CODE
+# ECX 30 DAYS OF CODE AND DESIGN
 # Day 16
 
 """
@@ -7,7 +7,7 @@
 Task: \n
 * Write a function that takes an integer as input, and returns it's translation to Roman numerals.
 * Using the aforementioned function, write a program that takes user input and prints out their Roman numeral form.
-This program must include all necessary type checks or Exception handling
+This program must include all necessary type checks or Exception handling.
 """
 macron = '\u0304'               # For the dash above numerals corresponding to digits above 4000
 
@@ -127,7 +127,7 @@ print(' Integers to Roman Numerals '.center(40, '*'))
 
 # Handle value errors
 try:
-    user_input = int(input('Enter a number to convert to roman numerals: '))
+    user_input = int(input('Enter a number to convert to Roman numerals: '))
     integer_to_roman(user_input)
 except ValueError:
     print('Invalid input. Enter an integer.')
