@@ -371,7 +371,7 @@ Note: \n
 * In the case of a division operation, the two numbers generated MUST be divisible.
 
 [Excute code](https://replit.com/@favourolumese/Maths-Game?v=1)  
-[Execute Timed Mental Maths Game (Similar but advanced to Maths Game)](https://replit.com/@favourolumese/Timed-Mental-Maths-Game?v=1)  
+[Execute Timed Mental Maths Game (similar but advanced to Maths Game)](https://replit.com/@favourolumese/Timed-Mental-Maths-Game?v=1)  
 [Read Timed Mental Maths Game](https://thecodingprocess.hashnode.dev/timed-mental-maths-game)
 
 ### Day 28
