@@ -43,11 +43,11 @@ def sieve_of_eratosthenes(user_input):
         else:
             list_of_prime.append(prime_num)
 
-            # Finding multiple of prime and storing them in composite list
+            # Finding multiples of prime numbers and storing them in composite list
             while multiples < user_input:
                 multiples = prime_num * multiplier
 
-                # Prevent input same number in composite list
+                # Prevent inputting the same number in composite list
                 if multiples in list_of_composite:
                     multiplier += 1
                     continue
