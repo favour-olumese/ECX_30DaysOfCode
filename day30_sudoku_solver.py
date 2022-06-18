@@ -5,7 +5,7 @@
 **Sudoku Solver**
 
 Task: \n
-* Write a function that takes in a 9×9 array of NUMBERS.
+* Write a function that takes in a 9×9 array of numbers.
 Let this list represent a partially filled grid of numbers (specifically, of integers ranging from 1 to 9,
 where "0" signifies an empty space in the grid.) as parameters, and returns as a 9×9 array, the solution(s) to it.
 If there are no solutions, return False.
@@ -19,6 +19,7 @@ The problem is further explained below:
 Given a partially filled 9×9 list, the goal is to assign digits (from 1 to 9) to the empty cells so that every row,
 column, and sub grid of size 3×3 contains exactly one instance of the digits from 1 to 9.
 """
+
 
 def is_valid_move(grid, row, col, number):
     """Checks if the number inputted is a valid move."""
@@ -47,8 +48,10 @@ def is_valid_move(grid, row, col, number):
 
 def solve(grid, row, col):
     """Solves the sudoku"""
-    try:    # This handles a wrong type found in the grid
-        # If we are at the final column and row, and all num have being inputted, the board is filled and the game ends
+    try:  # This handles a wrong type found in the grid
+
+        # If we are at the last column and row, and all digits have been inputted,
+        # the board is filled and the game ends
         if col == 9:
             if row == 8:
                 return True
@@ -61,7 +64,7 @@ def solve(grid, row, col):
         if grid[row][col] > 0:
             return solve(grid, row, col + 1)
 
-        # Try the number 1 - 9 in empty slot (slot having the number 0).
+        # Try the numbers 1 - 9 in an empty slot (slot having the number 0).
         for num in range(1, 10):
 
             # Check if the number is valid and enter the valid number into the cell
