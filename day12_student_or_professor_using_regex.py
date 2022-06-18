@@ -1,4 +1,4 @@
-# ECX 30 DAYS OF CODE
+# ECX 30 DAYS OF CODE AND CODE
 # Day 12
 
 """
