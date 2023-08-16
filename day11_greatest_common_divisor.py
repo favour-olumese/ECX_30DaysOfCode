@@ -18,18 +18,15 @@ The process is described below:
 
 # Greatest common divisor function
 def euclidean(big_num, small_num):
-    # Make the first argument the lager of both arguments
+    # Make the first argument the larger of both arguments
     if small_num > big_num:
-        temp = big_num
-        big_num = small_num
-        small_num = temp
+        big_num, small_num = small_num, big_num
+
 
     # Keep dividing until the remainder is 0
     while small_num > 0:
         # Dummy variable to hold the value of the smallest number
-        remainder = small_num
-        small_num = big_num % small_num
-        big_num = remainder
+        small_num, big_num = big_num % small_num, small_num
 
     print('The greatest common divisor is', big_num)
 
