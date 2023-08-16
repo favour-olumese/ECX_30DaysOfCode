@@ -11,7 +11,7 @@ E.g: f(["a", "b", "a", "a", 3, 3, 2, "hello", "b"] ) => ["a", "b", 3, 2, "hello"
 ### Day 2
 #### Find the mode
 
-Extend the function from day 1, to also print out the modal element(s) of the input list.  i.e, to determine which element occurs the most. If there are multiple such elements, then return a list containing them all.
+Extend the function from day 1, to also print out the modal element(s) of the input list.  i.e., to determine which element occurs the most. If there are multiple such elements, then return a list containing them all.
 E.g.: the modal element of the above list is ["a"]
 
 [Execute code](https://replit.com/@favourolumese/ECX30DaysOfCodeDay2)  
@@ -35,7 +35,7 @@ Without using the inbuilt hex() function, write a function that takes an integer
 
 ### Day 5
 #### Fibonacci 
-Using recursion, write a function that prints out the first "n" members of the Fibonacci series. (The Fibonacci series is a series of integers, starting from 0 and 1, for which each term is the sum of the two preceding term; i.e  [0, 1, 1, 2, 3, 5, 8, 13, 21,...] or "fib(n+1) = fib(n)+ fib(n-1)."
+Using recursion, write a function that prints out the first "n" members of the Fibonacci series. (The Fibonacci series is a series of integers, starting from 0 and 1, for which each term is the sum of the two preceding terms; i.e  [0, 1, 1, 2, 3, 5, 8, 13, 21,...] or "fib(n+1) = fib(n)+ fib(n-1)."
 
 [Execute code](https://replit.com/@favourolumese/Fibonacci-Sequence-Using-Recursion-in-Python?v=1)  
 [Read article](https://thecodingprocess.hashnode.dev/fibonacci-sequence-using-recursion-in-python)
@@ -113,7 +113,7 @@ Create a mock USSD service that takes users' inputs, and provides appropriate re
 
 * Users can then choose among a list of options (with numbers), whether to check their balance, send money, purchase airtime, etc.
 
-* For check balance, the user is prompted to provide his password (hard-coded by you.). If correct, s/he is shown the balance—also hard-coded.
+* For checking the balance, the user is prompted to provide his password (hard-coded by you.). If correct, s/he is shown the balance—also hard-coded.
 
 * For sending money, the user is prompted to choose from a selection of banks, after which he provides an account number, and then an amount to send. And then a password, which if correct, would send the required amount, and deduct it from  the account balance.
 
@@ -206,7 +206,7 @@ It contains ALL the numbers 1 through 9. The sum of each row, each column, and e
 #### When in Rome
 
 ##### Task:
-* Write a function that takes an integer as input, and returns it's translation to Roman numerals.
+* Write a function that takes an integer as input, and returns its translation to Roman numerals.
 * Using the aforementioned function, write a program that takes user input and prints out their Roman numeral form.
 This program must include all necessary type checks or Exception handling
 
@@ -218,7 +218,7 @@ This program must include all necessary type checks or Exception handling
 
 ##### Task:
 * Write a function that prints out the first "n" rows of Pascal's triangle.
-Where "n" is an integer taken as argument of the function.
+Where "n" is an integer taken as an argument of the function.
 [See more](https://en.m.wikipedia.org/wiki/Pascal%27s_triangle)
 
 [Execute code](https://replit.com/@favourolumese/Pascals-Triangle?v=1)  
@@ -233,7 +233,7 @@ E.g.:
 f("Hello. I'm Edwin A.J, and you?") => "You. and A.J Edwin I'm, Hello?"
 f("What time is it? Hammer time.") => "Time Hammer It is? time what."
 
-**Note:** As shown in the example above, the order of the punctuation marks ("?", "," , ".") have not changed. Only the words have.
+**Note:** As shown in the example above, the order of the punctuation marks ("?", "," , ".") has not changed. Only the words have.
 
 [Execute code](https://replit.com/@favourolumese/Reversing-Words-Order-with-Punctuations-Order-Unchanged?v=1)  
 [Read article](https://thecodingprocess.hashnode.dev/reversing-words-order-with-punctuations-order-unchanged)
@@ -243,7 +243,7 @@ f("What time is it? Hammer time.") => "Time Hammer It is? time what."
 
 ##### Task:
 Write a function that takes in a date as input, and returns what day of the week it is.
-* The input date can be in any convenient format(Whether a "ddmmyy" string, a series of integers, etc)
+* The input date can be in any convenient format (whether a "ddmmyy" string, a series of integers, etc)
 * Your function must work for both future and past dates.
 * Exception handling(or Type checking) is necessary.
 
@@ -259,7 +259,7 @@ Write a program that:
 (E.g. "44s", "32m", "10h".)
 * The last character of the string entered would be used to determine its unit.
 * Counts down from the input value, and prints out the time left on the clock every second.
-* When the time is exhausted, makes a beeping sound non-stop until the user exits the app.
+* When the time is exhausted, make a beeping sound non-stop until the user exits the app.
 
 [Execute code](https://replit.com/@favourolumese/Countdown-Timer?v=1)  
 [Read article](https://thecodingprocess.hashnode.dev/creating-a-countdown-timer-using-python)
@@ -284,7 +284,7 @@ Note: In both cases, disregard case sensitivity.
 #### Zodiac
 
 ##### Task:
-Extend the function from day 19 to return BOTH the day of the week AND the corresponding "Zodiac sign" of the input date. Return value can be a list or ANY convenient structure.  All rules relating to task 19 still apply.
+Extend the function from day 19 to return BOTH the day of the week AND the corresponding "Zodiac sign" of the input date. The return value can be a list or any convenient structure.  All rules relating to task 19 still apply.
 
 ### Day 23
 #### Sieve of Eratosthenes
@@ -340,9 +340,9 @@ E.g.: f(['x', 'c', 'b', 'v', 'z', 'a'], "descending") => ['a', 'b', 'c', 'v', 'x
 "Binary search" is a basic algorithm, used to find the position of a target value within a SORTED LIST.
 (More details can be found here: Binary search)
 For today's task, write a function that takes in two parameters: One list of alphabets, and one character to search.
-E.G f("x", ['m', 'v', 'x', 'u'])
+E.g.; f("x", ['m', 'v', 'x', 'u'])
 In your function:
-* first check if the input list is sorted, using any method of your preference. (If it's unsorted,
+* First check if the input list is sorted, using any method of your preference. (If it's unsorted,
 return a warning indicating so, else continue)
 * Using the BINARY SEARCH ALGORITHM, find the position of the input character in the sorted list.
 * Return the position of the character in the search list.
@@ -359,11 +359,11 @@ return a warning indicating so, else continue)
 
 ##### Task:
 Using Python, create a game with the following rules:
-* A(randomly generated) basic algebraic expression is displayed onto the screen.( E.G 36×47, or 117 ÷ 9, etc.)
+* A(randomly generated) basic algebraic expression is displayed on the screen. (e.g.; 36 × 47, or 117 ÷ 9, etc.)
 * The user is required to provide an answer to the expression within 10 seconds.
 * If the user provides a RIGHT answer, he gains {10×(the number of seconds left)} points
 * If the user provides a WRONG answer, or the time elapsed, the player loses a life.
-* At the start of the game, the player provides his name, and begins playing with 3 lives.
+* At the start of the game, players provide their names, and begin playing with 3 lives.
 * The player loses once he has exhausted his 3 lives.
 
 Note: \n
@@ -387,7 +387,7 @@ Using the built-in SMTP module, write a function that takes a list of emails as 
 Write a function that:
 * Takes as parameters, a list of tuples, containing grades and their corresponding units.
 (E.g.: [ ("A", 2), ("A",3), ("B", 2) ... etc.])
-* Computes and returns the student GPA, based on the values provides.
+* Computes and returns the student's GPA, based on the values provides.
 
 **Note:** Handle All necessary exceptions and/or edge cases.
 
@@ -399,11 +399,11 @@ Write a function that:
 
 ##### Task:
 * Write a function that takes in a 9×9 array of NUMBERS.
-Let this list represent a partially filled grid of numbers (specifically, of integers ranging from 1 to 9, where "0" signifies an empty space in the grid.) as parameters, and returns as a 9×9 array, the solution(s) to it.
+Let this list represent a partially filled grid of numbers (specifically, of integers ranging from 1 to 9, where "0" signifies an empty space in the grid.) as parameters, and return as a 9×9 array, the solution(s) to it.
 If there are no solutions, return False.
 
 ##### Exceptions:
-* If an empty list or an invalid list (list with numbers outside the 1-9 range, or empty lists, or a list of wrong size,
+* If an empty list or an invalid list (list with numbers outside the 1-9 range, or empty lists, or a list of the wrong size,
 etc.) is input, it issues a warning.
 (**Hint:** Backtracking is one effective method for solving this problem—it is however, not the only method.)
 The problem is further explained below:
